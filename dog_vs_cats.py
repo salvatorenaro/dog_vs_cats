@@ -5,6 +5,10 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import matplotlib.pyplot as plt
 import webbrowser
 
+#Salvatore Naro
+
+# IL CODICE E ANCORA IN FASE DI SVILUPPO DI MIGLIORAMENTI 
+
 
 #Il Dataset scaricato dispone di 25000 imaggini,12500 per ogni classe.
 #Potete scaricarlo da qua sotto basta rimuovere il canceletto davanti a webbrowser
@@ -106,7 +110,7 @@ for fname in fnames:
 #---------------------------------------------------------------------------
 #Creiamo il nostro modello
 
-### Le varie descrizioni le trovate nel file dataset_mnist_cnn.py che si trova nella stessa repository di questo file ###
+### Le varie descrizioni le trovate nel file dataset_mnist_cnn.py che si trova nella repository dei dataset ###
 
 model = models.Sequential()
 model.add(layers.Conv2D(32,(3,3), activation='relu',padding='same', input_shape = (150,150,3)))
